@@ -24,3 +24,24 @@ console. clear()
 
 
 
+
+
+
+
+
+
+
+// zufaellige zahl zwischen 1 und 10
+const randomNumber10: number = Math.floor(Math.random() * 10) + 1
+console.log(randomNumber10);
+const randomNumber: number = 4.97878
+console.log(Math.floor(randomNumber));
+
+
+
+
+const PI = Math.PI 
+console.log(PI.toFixed(7));
+
+
+

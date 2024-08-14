@@ -1,7 +1,7 @@
 
 document.getElementById('submit-button')?.addEventListener('click', () => {
-    const inputSum = parseFloat((document.getElementById('input-sum') as HTMLInputElement).value)
-    const inputPax = parseFloat((document.getElementById('input-pax') as HTMLInputElement).value)
+    const inputSum = Number((document.getElementById('input-sum') as HTMLInputElement).value)
+    const inputPax = Number((document.getElementById('input-pax') as HTMLInputElement).value)
     const ranking: string = (document.getElementById('input-ranking') as HTMLInputElement).value
     let divided: number = inputSum / inputPax
     if (ranking === "Schlecht") {

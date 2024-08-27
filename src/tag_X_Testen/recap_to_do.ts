@@ -1,72 +1,83 @@
-const toDoListItems: string[] = [];
+// const toDoListItems: string[] = [];
 
-function addItem(todoElement: string, atTheBack: boolean): void {
-  if (atTheBack) {
-    toDoListItems.push(todoElement);
-  } else {
-    toDoListItems.unshift(todoElement);
-  }
-}
+// function addItem(todoElement: string, atTheBack: boolean): void {
+//   if (atTheBack) {
+//     toDoListItems.push(todoElement);
+//   } else {
+//     toDoListItems.unshift(todoElement);
+//   }
+// }
 
-// todos hinzufuegen
-addItem("Gassi gehen", false);
-//console.log(toDoListItems);
+// // todos hinzufuegen
+// addItem("Gassi gehen", false);
+// //console.log(toDoListItems);
 
-addItem("Hunde streicheln", false);
-//console.log(toDoListItems);
+// addItem("Hunde streicheln", false);
+// //console.log(toDoListItems);
 
-addItem("Hunde fuettern", false);
-//console.log(toDoListItems);
+// addItem("Hunde fuettern", false);
+// //console.log(toDoListItems);
 
-addItem("kochen", true);
-console.log(toDoListItems);
-
-function removeItem(atTheBack: boolean): void {
-  if (atTheBack) {
-    toDoListItems.pop();
-  } else {
-    toDoListItems.shift();
-  }
-}
-
-// removeItem(false);
+// addItem("kochen", true);
 // console.log(toDoListItems);
 
-function addItemAt(toDoItem: string, index: number): void {
-  toDoListItems.splice(index, 0, toDoItem);
-}
+// function removeItem(atTheBack: boolean): void {
+//   if (atTheBack) {
+//     toDoListItems.pop();
+//   } else {
+//     toDoListItems.shift();
+//   }
+// }
 
-addItemAt("Musik hoeren", 2);
-console.log(toDoListItems);
+// // removeItem(false);
+// // console.log(toDoListItems);
 
-function removeItemAt(indexToRemove: number): void {
-  toDoListItems.splice(indexToRemove, 1);
-}
+// function addItemAt(toDoItem: string, index: number): void {
+//   toDoListItems.splice(index, 0, toDoItem);
+// }
 
-removeItemAt(2);
-console.log(toDoListItems);
+// addItemAt("Musik hoeren", 2);
+// console.log(toDoListItems);
 
-function askForUserInput(): void {
-//   let userInput = window.prompt("Bitte 5 todos, getrennt durch komma");
-//   console.log(userInput);
+// function removeItemAt(indexToRemove: number): void {
+//   toDoListItems.splice(indexToRemove, 1);
+// }
 
-  if (userInput) {
-    const itemsArray: string[] = userInput.split(",");
-    console.log(itemsArray);
+// removeItemAt(2);
+// console.log(toDoListItems);
 
-    if (itemsArray.length === 5) {
-      toDoListItems.push(itemsArray[0].trim());
-      toDoListItems.push(itemsArray[1].trim());
-      toDoListItems.push(itemsArray[2].trim());
-      toDoListItems.push(itemsArray[3].trim());
-      toDoListItems.push(itemsArray[4].trim());
-      console.log(toDoListItems);
-    } else {
-      console.error("Bitte GENAU 5 Todos eingeben!!!");
-    }
-  } else {
-    console.error("Eingabe war leer. Bitte 5 todos eingeben");
-  }
-}
+// function askForUserInput(): void {
+// //   let userInput = window.prompt("Bitte 5 todos, getrennt durch komma");
+// //   console.log(userInput);
 
-askForUserInput();
+//   if (userInput) {
+//     const itemsArray: string[] = userInput.split(",");
+//     console.log(itemsArray);
+
+//     if (itemsArray.length === 5) {
+//       toDoListItems.push(itemsArray[0].trim());
+//       toDoListItems.push(itemsArray[1].trim());
+//       toDoListItems.push(itemsArray[2].trim());
+//       toDoListItems.push(itemsArray[3].trim());
+//       toDoListItems.push(itemsArray[4].trim());
+//       console.log(toDoListItems);
+//     } else {
+//       console.error("Bitte GENAU 5 Todos eingeben!!!");
+//     }
+//   } else {
+//     console.error("Eingabe war leer. Bitte 5 todos eingeben");
+//   }
+// }
+
+// askForUserInput();
+
+
+
+
+
+
+
+const songArray: string[] = ['kikiki', 'Jokjok', 'aexxx', 'Aoooo', 'wewewewe', 'iuoiuo', 'ftftftft']
+songArray.sort((a,b) => a.localeCompare(b))
+
+console.log(songArray);

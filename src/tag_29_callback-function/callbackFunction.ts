@@ -52,16 +52,14 @@
 
 // callback-TS-Level-2_1
 
-// function calculateSumAndMore(a: number, b: number, callback1?: (result1: number) => number, callback2?: (result2: number) => number) {
-//     const result = a+b
-//     if (callback1) {
-//         const result1 = callback1(sum)
-//     }
-// }
+function calculateSumAndMore(a: number, b: number, callback1?: (result1: number) => number, callback2?: (result2: number) => number) {
+    const result = a+b
+    if (callback1) {
+        const result1 = callback1(sum)
+    }
+}
 
-// calculateSumAndMore()
-
-
+calculateSumAndMore()
 
 
 
@@ -69,7 +67,9 @@
 
 
 
-// callback-TS-Level-3_2
+
+
+callback-TS-Level-3_2
 
 function randomNum(): string {
     return (Math.floor(Math.random() * 100) + 1).toString()
@@ -104,3 +104,29 @@ document.getElementById('button')?.addEventListener('click', () => {
 
     htmlOutput(randomElement)
 })
+
+
+
+
+
+
+
+
+
+// function randomNumber(): string {
+//     const randomNum = (Math.floor(Math.random() * 100) + 1).toString()
+//     return randomNum
+
+// }
+// console.log(randomNumber());
+
+
+
+//  function randomString(): string {
+//     const stringCollection: string[] = ['affe',"himmel", 'klo']
+//     const randomString = (Math.floor(Math.random() * stringCollection.length))
+//     return stringCollection[randomString]
+// }
+// console.log(randomString());
+
+

@@ -129,13 +129,31 @@
 
 
 
-const citiesArray = ['  berlin', 'zypErn', 'mUnich  ', 'Hamburg ', ' frankfurt'];
+// const citiesArray = ['  berlin', 'zypErn', 'mUnich  ', 'Hamburg ', ' frankfurt'];
 
-function cityClean(city: string[]): string[] {
-    const trimmed = city.map(city => city.trim().toLowerCase())
-    const sort = trimmed.sort((a,b) => a.localeCompare(b))
-    const makeBig = sort.map(city => city.charAt(0).toUpperCase() + city.slice(1))
-    return makeBig
+// function cityClean(city: string[]): string[] {
+//     const trimmed = city.map(city => city.trim().toLowerCase())
+//     const sort = trimmed.sort((a,b) => a.localeCompare(b))
+//     const makeBig = sort.map(city => city.charAt(0).toUpperCase() + city.slice(1))
+//     return makeBig
+// }
+// console.log(cityClean(citiesArray));
+
+
+
+
+
+
+
+
+
+
+
+
+
+const arrayNumber: number[] = [86,76,6,987,632,98554,7867]
+
+function sortingMachine(): number[] {               
+    return arrayNumber.sort((a,b) => a-b)
 }
-console.log(cityClean(citiesArray));
-
+console.log(sortingMachine());

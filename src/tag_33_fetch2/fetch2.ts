@@ -19,8 +19,10 @@ function fetchAndDisplay(url: string) {
             console.error(error);
         });
 }
-
 fetchAndDisplay(url);
+
+
+
 
 interface Itodo {
     userId: number;
@@ -28,6 +30,8 @@ interface Itodo {
     title: string;
     completed: boolean;
 }
+
+
 
 function createList(data: Itodo[]): string {
     const resultAsString = data.map((data: Itodo) => {
@@ -77,20 +81,20 @@ function searching(data: Itodo[]) {
 
 
 
-// function fetchAndDisplay(url: string) {
-//     fetch(url)
-//         .then((response: Response) => {
-//             if (!response.ok) {
-//                 throw new Error('error with then');
-//             }
-//             return response.json();
-//         })
-//         .then((data: Itodo[]) => {
+function fetchAndDisplay(url: string) {
+    fetch(url)
+        .then((response: Response) => {
+            if (!response.ok) {
+                throw new Error('error with then');
+            }
+            return response.json();
+        })
+        .then((data: Itodo[]) => {
             
-//             showContent.innerHTML = createList(data);
-//             searching(data);
-//         })
-//         .catch((error: Error) => {
-//             console.error(error);
-//         });
-// }
+            showContent.innerHTML = createList(data);
+            searching(data);
+        })
+        .catch((error: Error) => {
+            console.error(error);
+        });
+}
